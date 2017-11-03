@@ -56,10 +56,6 @@ void stepper()
 		cmd=0;
 		seguro=1;
 		unsigned int i;
-		for(i=0;i<9;i++)
-		{
-			com[i]=0;
-		}
 	}
 	else if ((cmd==2)&&(seguro==1)) //OR comando de voz
 	{		
@@ -78,11 +74,6 @@ void stepper()
 		GPIOE_PDOR=0x04000000; //apagar verde
 		seguro=0;
 		cmd=0;
-		unsigned int i;
-		for(i=0;i<9;i++)
-			{
-				com[i]=0;
-			}
 	}	
 }
 
